@@ -33,3 +33,13 @@ prices[2]=20;
 prices[6]=30;
 
 console.log(prices);
+
+//What is the length of the following inventory array?
+var inventory = [
+    ["gold pieces", 25],
+    ["belt", 4],
+    ["ring", 1],
+    ["shoes", 2]
+  ];
+
+  console.log(inventory.length); //4 
