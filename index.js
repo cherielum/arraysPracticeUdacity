@@ -43,3 +43,57 @@ var inventory = [
   ];
 
   console.log(inventory.length); //4 
+
+  //Colors of the Rainbow
+  // Using only the splice() method, insert the missing colors into the array, and remove the color "Blackberry" by following these steps:
+
+  // Remove "Blackberry"
+  // Add "Yellow" and "Green"
+  // Add "Purple"
+
+  var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+
+rainbow.splice(-2, 1, "Yellow", "Green"); 
+rainbow.splice(rainbow.length, 0, "Purple"); 
+console.log(rainbow);
+
+
+  //Create a function called hasEnoughPlayers() that takes the team array as an argument and returns true or false depending on if the array has at least seven players.
+
+var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+console.log(hasEnoughPlayers(team));
+
+function hasEnoughPlayers(team){
+    if (team.length >= 7){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+//Mal takes on three new crew members named "Simon", "River", and "Book". Use the push() method to add the three new crew members to the crew array.
+
+var captain = "Mal";
+var second = "Zoe";
+var pilot = "Wash";
+var companion = "Inara";
+var mercenary = "Jayne";
+var mechanic = "Kaylee";
+
+var crew = [captain, second, pilot, companion, mercenary, mechanic];
+
+var doctor = "Simon";
+var sister = "River";
+var shepherd = "Book";
+
+// your code goes here
+crew.push("Simon", "River", "Book");
+console.log(crew);
+
+//reverse var reverseMe = ["h", "e", "l", "l", "o"];
+var reverseMe = ["h", "e", "l", "l", "o"]; 
+reverse.reverseMe();
+
+//
+
