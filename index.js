@@ -95,5 +95,16 @@ console.log(crew);
 var reverseMe = ["h", "e", "l", "l", "o"]; 
 reverse.reverseMe();
 
-//
+//Sort this
+var sortMe = [2, 1, 10, 7, 6];
+sortMe.sort();
+
+//use a variable to represent the index in the array, and then loop over that index to perform whatever manipulations your heart desires.
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+// the variable `i` is used to step through each element in the array
+for (var i = 0; i < donuts.length; i++) {
+    donuts[i] += " hole";
+    donuts[i] = donuts[i].toUpperCase();
+}
 
