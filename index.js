@@ -129,3 +129,40 @@ test.forEach(function(test1, i){
     }
 console.log(test);
 });
+
+//.map array looping example
+
+var numbers = [1, 2, 3, 4, 5];
+
+const numbers2 = numbers.map(numbers => numbers +2 );
+console.log(numbers2); //expect Array [3, 4, 5, 6, 7]
+
+//another map with loop example 
+
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+var improvedDonuts = donuts.map(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  return donut;
+});
+
+//Use the map() method to take the array of bill amounts shown below, 
+//and create a second array of numbers called totals that shows the bill amounts with a 15% tip added.
+
+
+
+var bills = [50.23, 19.12, 34.01,
+    100.11, 12.15, 9.90, 29.11, 12.99,
+    10.00, 99.22, 102.20, 100.10, 6.77, 2.22
+];
+
+const totals = bills.map( function (x) {
+    tip = x * 0.15;
+    x += tip;
+    x = x.toFixed(2);
+    return Number(x);
+   
+});    
+
+console.log(totals );
